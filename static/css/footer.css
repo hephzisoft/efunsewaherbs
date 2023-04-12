@@ -1,0 +1,22 @@
+.footer-top a:hover {
+    color: black;
+}
+
+.footer-top {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@media (max-width: 500px) {
+    .copyright {
+        display: block;
+    }
+
+    .divide {
+        display: none;
+    }
+}

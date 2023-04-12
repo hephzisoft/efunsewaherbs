@@ -5,9 +5,10 @@
 <link rel="stylesheet" href="{% static 'css/product-details.css' %}">
 
 
-{% comment %} Main Code  {% endcomment %}
+{% comment %} Main Code {% endcomment %}
 <main class="container p-4  product-details">
-  <div class="mb-5"><a href="{% url 'home' %}" class="back-to-home"><i class="fa-solid fa-house fa-2x"></i>Home</a></div>
+  <div class="mb-5"><a href="{% url 'home' %}" class="back-to-home"><i class="fa-solid fa-house fa-2x"></i>Home</a>
+  </div>
   <div class="product-spec">
     <div class="item-img">
       <img src="{{product.image}}" alt="" />
@@ -17,19 +18,13 @@
 
       <p class="item-description mt-3">{{product.desc}}</p>
       <p class="item-price">&#8358;{{product.price}}</p>
-      
 
-      <form action=""  class="no-of-item mb-3 mt-4" >
-            {% csrf_token %}
-        <button class="update-cart btns" type="submit" data-action="add"><i class="fa-solid fa-plus"></i></button>
-        <input type="hidden" name="product_id" value="{{ product.id }}" id="product-id" />
-        <p class="numbers ms-2 mt-2" id="qty">0</p>
-        <button class="update-cart btns" type="submit" data-action="remove"><i class="fa-solid fa-minus"></i></button>
-      </form>
+
+      <a href="https://wa.me/message/2R2PYQKD7IEHG1">Send a message</a>
 
 
 
 </main>
 
- 
+
 {% endblock %}
